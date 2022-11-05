@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+    <body>
+        <div class="money-container">
+            <div class="money-content">
+                <div class="money-cash">
+                    <p class="munnie">&euro;&nbsp;<span id="cash">0</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="hud-container">
+            <div class="hud-bars-container"></div>
+                <div class='ui-healthbar'>
+                    <i class="fas fa-heart" data-type="health"></i>
+                    <div class="hud-barfill"></div>
+                </div>
+                <div class='ui-armorbar'>
+                     <i class="fas fa-shield-alt" data-type="armor"></i>
+                     <div class="hud-barfill"></div>
+                </div>
+                <div class='ui-foodbar'>
+                    <i class="fas fa-utensils" data-type="food"></i>
+                    <div class="hud-barfill"></div>
+                </div>
+                <div class='ui-waterbar'>
+                    <i class="fas fa-tint" data-type="water"></i>
+                    <div class="hud-barfill"></div>
+                </div>
+                <div class='ui-stressbar'>
+                    <i class="fas fa-brain" data-type="stress"></i>
+                    <div class="hud-barfill"></div>
+                </div>
+                <div class="voice-container">
+                  <div class="voice-block" data-voicetype="1"></div>
+                  <div class="voice-block" data-voicetype="2"></div>
+                  <div class="voice-block" data-voicetype="3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="VehicleContainer">
+            <div class="ExtraContainer">
+                <div class="VehicleInfo Car-Speed">&nbsp;&nbsp;&nbsp;&nbsp;<span id="Speed-Number">100</span><span class="info-label"> KM/U</span></div>
+                <div class="VehicleInfo Car-Fuel">&nbsp;&nbsp;&nbsp;&nbsp;<span id="Fuel-Number">100</span><span class="info-label"> Fuel</span></div>
+                <div class="VehicleInfo Car-Belt">&nbsp;&nbsp;&nbsp;&nbsp;<img src="./img/belt.png"></div>
+            </div>
+            <div class="VehicleInfo-Time"><span class="time-text">00:00 </span><span class="info-label"> AM</span></div>
+        </div>
+        <div class="VehicleInfo-Street">Street</div>
+        <div class="VehicleInfo-Zone">Zone</div>
+        <div class="MapBorder"></div>
+    </body>
+    <script type="text/javascript" src="./js/script.js"></script>
+</html>

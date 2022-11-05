@@ -1,0 +1,254 @@
+@font-face {
+ font-family: 'pdown';
+ src: url('pdown.ttf');
+}
+
+body {
+ user-select: none;
+ overflow: hidden;
+ font-family: 'Lato', sans-serif;
+}
+
+p {
+ margin: 0 !important;
+}
+
+.money-container {
+ position: absolute;
+ right: 5vw;
+ top: 7vh;
+}
+
+#cash {
+ color: white;
+}
+
+.money-cash {
+ display: none;
+ float:right;
+ font-family: 'pdown';
+ font-weight: 400;
+ font-size: 29px;
+ color: white;
+ padding: 4px;
+ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+ margin: 0;
+ margin-right: 6px;
+ margin-top: 6px;
+ padding: 0;
+}
+
+.money-cash {
+ color: rgb(210, 210, 210);
+ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+ text-align: right;
+}
+
+#plus-changeamount {
+ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+ text-align: right;
+ color: #f0f0f0;
+}
+
+#minus-changeamount {
+ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+ text-align: right;
+ color: #f0f0f0;
+}
+
+.minus {
+ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+ text-align: right;
+ color: #801e1f;
+}
+
+.munnie {
+ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+ text-align: right;
+ color: #277418;
+}
+
+.moneyupdate {
+ float: right;
+ padding-left: 0.5vw;
+}
+
+.plus {
+ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+ text-align: right;
+ color: #277418;
+}
+
+.hud-container {
+ position: absolute;
+ left: 3.2vh;
+ bottom: .2vh;
+}
+
+.ui-healthbar, .ui-armorbar, .ui-foodbar, .ui-waterbar, .ui-stressbar {
+ position: relative;
+ height: 2.48vh;
+ border-radius: 10px;
+ border: .3vh solid rgb(138, 138, 138);
+ float: left;
+ width: 3.5vh;
+ margin-left: 0.5vh;
+}
+
+.ui-healthbar > i, .ui-armorbar > i, .ui-foodbar > i, .ui-waterbar > i, .ui-stressbar > i {
+ position: absolute;
+ color: white;
+ z-index: 101;
+ font-size: 1.7vh;
+ margin-top: .4vh;
+ margin-left: .83vh;
+ text-shadow: .18vh .03vh .08vh rgba(0, 0, 0, 0.267);
+}
+
+.ui-healthbar > .hud-barfill {
+ background-color: #1f851c;
+}
+
+.ui-armorbar > .hud-barfill {
+ background-color: #257197;
+}
+
+.ui-foodbar > .hud-barfill {
+ background-color: #b96d17;
+}
+
+.ui-waterbar > .hud-barfill {
+ background-color: #173d8f;
+}
+
+.ui-stressbar > .hud-barfill {
+ background-color: #a82626;
+}
+
+.hud-barfill {
+ position: absolute;
+ height: 25%;
+ width: 3.60vh;
+ left: -0.06vh;
+ bottom: -0.021vh;
+ border-radius: 5px;
+ transition: .4s ease-in-out;
+}
+
+[data-type="food"] {
+  left: 0.2vh;
+}
+
+[data-type="water"] {
+    left: 0.3vh;
+}
+
+.voice-container {
+ position: absolute;
+ top: .3vh;
+ left: 23.4vh;
+}
+
+.voice-block {
+ position: relative;
+ width: .65vh;
+ height: .65vh;
+ margin-bottom: .3vh;
+ border-radius: 15px;
+ background-color: rgb(138, 138, 138);
+}
+
+.MapBorder {
+ position: absolute;
+ bottom: 3vh;
+ left: 2.5vh;
+ width: 24.5vh;
+ height: 15.5vh;
+ box-shadow: 1px 1px 12px rgb(5, 5, 5);
+ border: 5px solid rgb(138, 138, 138);
+}
+
+.VehicleInfo {
+ position: relative;
+ float: left;
+}
+
+.ExtraContainer {
+ position: absolute;
+ height: 3vh;
+ min-width: 5vh;
+ width: fit-content;
+ bottom: 2.3vh;
+ left: 27.8vh;
+ line-height: 3vh;
+ color: white;
+ font-size: 1.6vh;
+ font-weight: 800;
+ text-shadow: 1px 1px 0px #000000;
+}
+
+.VehicleInfo-Time {
+ display: block !important;
+ position: absolute;
+ font-size: 1.5vh;
+ bottom: 6vh;
+ left: 29vh;
+ color: #ffffff;
+ font-weight: 800;
+ text-shadow: 1px 1px 0px #000000;
+}
+
+.VehicleInfo-Zone {
+ display: block !important;
+ position: absolute;
+ font-size: 1.5vh;
+ top: 0.5vw;
+ left: 66.2vw;
+ color: #ffffff;
+ font-weight: 500;
+ text-shadow: 1px 1px 0px #000000;
+}
+
+.VehicleInfo-Street {
+ display: block !important;
+ position: absolute;
+ font-size: 1.5vh;
+ top: 0.5vw;
+ left: 29.8vw;
+ color: #ffffff;
+ font-weight: 500;
+ text-shadow: 1px 1px 0px #000000;
+}
+
+.info-label {
+ position: relative;
+ top: -.35vh;
+ font-size: 1vh;
+ text-shadow: 1px 1px 0px #000000;
+}
+
+.Car-Belt img {
+    width: 3vh;
+}
+
+.Low {
+    animation: Low 4s infinite;
+}
+
+@keyframes Low {
+    0% { 
+        background-color: #dd2929bc;
+    }
+    25% { 
+        background-color: #7e1a1abc;
+    }
+    50% { 
+        background-color: #dd2929bc;
+    }
+    75% { 
+        background-color: #7e1a1abc;
+    }
+    100% { 
+        background-color: #dd2929bc;
+    }
+}
