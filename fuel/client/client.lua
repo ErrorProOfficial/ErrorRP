@@ -18,25 +18,25 @@ end)
 
 -- // Events \\ --
 
-RegisterNetEvent('turbo-fuel:client:register:vehicle:fuel')
-AddEventHandler('turbo-fuel:client:register:vehicle:fuel', function(Plate, Vehicle, Amount)
+RegisterNetEvent('fuel:client:register:vehicle:fuel')
+AddEventHandler('fuel:client:register:vehicle:fuel', function(Plate, Vehicle, Amount)
  Config.VehicleFuel[Plate] = Amount
 end)
 
-RegisterNetEvent('turbo-fuel:client:update:vehicle:fuel')
-AddEventHandler('turbo-fuel:client:update:vehicle:fuel', function(Plate, Vehicle, Amount)
+RegisterNetEvent('fuel:client:update:vehicle:fuel')
+AddEventHandler('fuel:client:update:vehicle:fuel', function(Plate, Vehicle, Amount)
  Config.VehicleFuel[Plate] = Amount
 end)
 
-RegisterNetEvent('turbo-fuel:client:refuelWithJerryCan')
-AddEventHandler('turbo-fuel:client:refuelWithJerryCan', function()
+RegisterNetEvent('fuel:client:refuelWithJerryCan')
+AddEventHandler('fuel:client:refuelWithJerryCan', function()
     local plyPed = PlayerPedId()
     local veh, distanceToVeh = TurboCore.Functions.GetClosestVehicle()
     if distanceToVeh < 2.5 then
         if not IsPedSittingInVehicle(plyPed, veh) then
             RefuelCar(veh, GetVehicleNumberPlateText(veh), true)
             Wait(5000)
-            TriggerServerEvent('turbo-items:server:removeItem', 'jerry_can_normal', 1)
+            TriggerServerEvent('items:server:removeItem', 'jerry_can_normal', 1)
         else
             TurboCore.Functions.Notify('Излезте от МПС-то!', 'error', 5000)
         end
@@ -68,7 +68,7 @@ Citizen.CreateThread(function()
                 end
             else
                 Citizen.Wait(250)
-                TriggerServerEvent('turbo-fuel:server:register:fuel', Plate, Vehicle, math.random(55, 85))
+                TriggerServerEvent('fuel:server:register:fuel', Plate, Vehicle, math.random(55, 85))
                 Citizen.Wait(2500)
             end
          else
@@ -144,7 +144,7 @@ function SetFuelLevel(Vehicle, Plate, Amount, Spawned)
 end
 
 function RefuelCar(Vehicle, Plate, to50)
- exports['turbo-assets']:RequestAnimationDict("weapon@w_sp_jerrycan")
+ exports['assets']:RequestAnimationDict("weapon@w_sp_jerrycan")
  TaskPlayAnim(PlayerPedId(), "weapon@w_sp_jerrycan", "fire", 8.0, 1.0, -1, 1, 0, 0, 0, 0 )
  TurboCore.Functions.Progressbar("refuel-car", "Зареждане..", math.random(5000, 6500), false, true, {
      disableMovement = true,
