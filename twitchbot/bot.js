@@ -1,5 +1,5 @@
 var tmi = require("tmi.js")
-var channelname = "error_pro12"
+var channelname = "your name"
 var prefix = "!"
 
 var config = {
@@ -13,7 +13,7 @@ var config = {
     identity: {
         username: "error_pro12",
         // get yours at http://twitchapps.com/tmi
-        password: "oauth:470lcdc2zsig9o5hhbwgj4tvdumq36"
+        password: "you tmi"
     },
     channels: [channelname]
 }
