@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald&family=Play&display=swap');
+.inner {
+	position: absolute;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+#thebg {
+	
+    position: absolute;
+	overflow: hidden;
+	width: 1336px;
+	min-height: 723px;
+	background: url('../images/bg_vehinfo.png') top center no-repeat, #121212; 
+	top: 40%;
+	left:50%;
+    transform: translate(-50%, -40%);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	
+
+}
+
+.exitbtn {
+	border-radius:2px;
+	padding: 8px 12px;
+	position: absolute;
+	right: 12px; 
+	top: 20px;
+	background-color: red;
+	color: white;
+	border-style: hidden;
+	z-index: 9999;
+	cursor: pointer;
+	
+}
+
+.model-s{
+    position: absolute;
+    width: 250px;
+    height: 125px;
+	margin-top: 155px;
+	padding: 30px;
+  background: linear-gradient(to left, transparent, rgb(63, 63, 63));
+	border-left: 3px solid #f9cf00;
+}
+
+
+.plate-s{
+    position: absolute;
+    width: 250px;
+    height: 125px;
+	margin-top: 300px;
+	padding: 30px;
+	background: linear-gradient(to left, transparent, rgb(63, 63, 63));
+	border-left: 3px solid rgb(0, 69, 197);
+
+	justify-content: center;
+}
+
+
+.s{
+    position: absolute;
+    width: 250px;
+    height: 125px;
+	margin-top: 445px;
+	padding: 30px;
+	background: linear-gradient(to left, transparent, rgb(63, 63, 63));
+	border-left: 3px solid red;
+
+}
+
+
+
+.engine-s {
+	position: absolute;
+	padding:30px;
+	width:991px;
+	height:131px;
+	border:1px solid rgb(44, 44, 44);
+	margin-top:100px;
+	margin-left:280px;
+	background-image: url('../images/engine.png');
+
+}
+
+
+
+.suspension-s {
+	position: absolute;
+	padding:30px;
+	width:991px;
+	height:131px;
+	border:1px solid rgb(44, 44, 44);
+	margin-top:380px;
+	margin-left:280px;
+	background-image: url('../images/susp.png');
+
+}
+
+
+.brakes-s {
+	position: absolute;
+	padding:30px;
+	width:991px;
+	height:131px;
+	border:1px solid rgb(44, 44, 44);
+
+	margin-top:240px;
+	margin-left:280px;
+	background-image: url('../images/brakes.png');
+}
+
+
+.transmission-s {
+	position: absolute;
+	padding:30px;
+	width:991px;
+	height:131px;
+	border:1px solid rgb(44, 44, 44);
+	margin-top:520px;
+	margin-left:280px;
+	background-image: url('../images/transimission.png');
+
+}
+
+
+
+
+#label {
+	font-size:20px;
+	font-family: 'Shizuru', cursive;
+	color:#ccc;
+	line-height:20px;
+	transform: translate(0,-20px);
+}
+
+
+#label2 {
+	font-size:15px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Play', sans-serif;	
+	color:#ccc;
+	line-height:20px;
+	transform: translate(0,-20px);
+	opacity: 0.3;
+
+}
+#veh-mdl {
+	font-family: 'Space Mono', monospace;
+	font-size:20px;
+	color:#f9cf00;
+	text-shadow: 0px 0px 8px#f9cf00;
+
+	font-weight:bold;
+}
+
+#plate {
+	font-family: 'Space Mono', monospace;
+	font-size:28px;
+	font-size:30px;
+	color:rgb(0, 0, 0);
+	font-weight:bold;
+	transform: translate(37px,-45px);
+	
+
+}
+
+
+#true {
+	font-family: 'Space Mono', monospace;
+	font-size:20px;
+	color:#ff0000;
+	font-weight:bold;
+
+}
+
+
+#engine-lvl {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Play', sans-serif;		
+	font-size:16px;
+	font-weight:bold;
+	color:#ff7700;
+	text-shadow: 0 0 20px #ff7700 ;
+	margin-left: -20px;
+	
+}
+
+#brakes-lvl {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Play', sans-serif;		font-size:16px;
+	font-weight:bold;
+	color:#ff0000;
+	text-shadow: 0 0 20px #ff0000 ;
+	margin-left: -20px;
+
+
+}
+
+#suspension-lvl {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Play', sans-serif;		font-size:16px;
+	font-weight:bold;
+	color:#00ddff;
+	text-shadow: 0 0 20px #00ddff ;
+	margin-left: -20px;
+
+}
+
+#transmission-lvl {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Play', sans-serif;		font-size:16px;
+	font-weight:bold;
+	color:#0dff00;
+	text-shadow: 0 0 20px #0dff00 ;
+	margin-left: -20px;
+
+
+}
+
+
+
+
+
+
+
